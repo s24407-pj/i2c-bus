@@ -1,6 +1,6 @@
 {
   "name": "i2c-bus",
-  "version": "5.2.3",
+  "version": "6.0.0",
   "description": "I2C serial bus access with Node.js",
   "main": "i2c-bus.js",
   "directories": {
@@ -24,19 +24,20 @@
   },
   "dependencies": {
     "bindings": "^1.5.0",
+    "i2c-bus": "link:../../.local/share/pnpm/global/5/node_modules/i2c-bus",
     "nan": "^2.17.0"
   },
   "devDependencies": {
     "async": "^3.2.4",
     "coveralls": "^3.1.1",
-    "glob": "^10.3.3",
+    "glob": "^11.0.1",
     "jshint": "^2.13.6",
     "lodash": "^4.17.21",
-    "mocha": "^10.2.0",
+    "mocha": "^11.1.0",
     "mock-fs": "^5.2.0",
     "mock-require": "^3.0.3",
-    "nyc": "^15.1.0",
-    "sinon": "^15.2.0"
+    "nyc": "^17.1.0",
+    "sinon": "^20.0.0"
   },
   "keywords": [
     "i2c",
@@ -51,5 +52,10 @@
   ],
   "author": "fivdi",
   "license": "MIT",
-  "gypfile": true
+  "gypfile": true,
+  "pnpm": {
+    "overrides": {
+      "i2c-bus": "link:../../.local/share/pnpm/global/5/node_modules/i2c-bus"
+    }
+  }
 }

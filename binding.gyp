@@ -1,5 +1,6 @@
 {
   "targets": [{
+     "defines": ["V8_COMPRESS_POINTERS"],
     "target_name": "i2c",
     "include_dirs" : [
       "<!(node -e \"require('nan')\")"
